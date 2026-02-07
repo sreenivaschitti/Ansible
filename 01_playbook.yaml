@@ -2,7 +2,7 @@
   hosts: web
   tasks:
   - name: Print hello World
-    ansible.builtin.debug:
+    ansible.builtin.ping:
       msg: "Hello World"
 
 
