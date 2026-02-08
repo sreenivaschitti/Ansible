@@ -2,7 +2,6 @@
   hosts: local
   connection: local
   vars:
-    
     duration: "6"
     trainer: "shiva"
 
@@ -11,5 +10,5 @@
       vars:
         
       ansible.builtin.debug:
-        msg: "course is {{course}}, duration is {{duration}}, trainer is {{trainer}}"
+        msg: "course is {{duration}}, duration is {{duration}}, trainer is {{trainer}}"
 
