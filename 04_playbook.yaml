@@ -7,7 +7,7 @@
     trainer: "shiva"
 
   tasks: 
-    - name: Print play_level_variables
+    - name: Print variables
       ansible.builtin.debug:
       msg: "course is {{course}}, duration is {{duration}}, trainer is {{trainer}}"
 
