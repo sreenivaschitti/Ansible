@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    course: "Devops"
+    
     duration: "6"
     trainer: "shiva"
 
