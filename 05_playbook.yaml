@@ -8,7 +8,8 @@
 
   tasks: 
     - name: Print variables
-      course: "java"
+      vars:
+        course: "java"
       ansible.builtin.debug:
         msg: "course is {{course}}, duration is {{duration}}, trainer is {{trainer}}"
 
