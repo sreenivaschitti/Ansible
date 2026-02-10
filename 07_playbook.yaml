@@ -18,5 +18,5 @@
         msg: |
           Program : {{ program }}
           Duration: {{ duration }}
-        when: IS_LIVE 
+      when: IS_LIVE 
     
