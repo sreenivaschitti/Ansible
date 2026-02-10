@@ -9,14 +9,14 @@
       Months: 4
       trainer: "siva"
     Topics: #list
-      - Linux
-      - Shell
-      - Ansible
+    - Linux
+    - Shell
+    - Ansible
     tasks:
-      - name: Print variables
-        ansible.builtin.debug:
-         msg: |
-          program : {{"program"}}
-         duration: {{"duration"}}
+    - name: Print variables
+      ansible.builtin.debug:
+        msg: |
+          Program : {{"program"}}
+          Duration: {{"duration"}}
          when: IS_LIVE 
     
