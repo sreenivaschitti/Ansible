@@ -4,7 +4,7 @@
   tasks:
     - name: Print facts
       ansible.builtin.debug:
-        msg: "{{ ansible_facts }}"
+        #msg: "{{ ansible_facts }}"
 
     - name: check red hat or not
       ansible.builtin.debug:
