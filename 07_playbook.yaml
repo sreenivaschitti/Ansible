@@ -4,7 +4,7 @@
   vars:
     program: "Devsecops"
     duration: 140
-    IS_LIVE: true
+    IS_LIVE: false
     Details: #map 
       Months: 4
       trainer: "siva"
