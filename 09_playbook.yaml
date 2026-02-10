@@ -4,7 +4,7 @@
   connection: local
   tasks:
     - name: command 
-      ansible.builtin.shell: ls -lsi etc/
+      ansible.builtin.shell: ls -lsi /etc/
       register: users_output
 
     - name: Print
