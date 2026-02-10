@@ -34,6 +34,6 @@
   tasks:
     - name: print less or more
       ansible.builtin.debug:
-        msg: {{ Number1 }} less {{ Number2 }}  
+        msg: "{{ Number1 }} is {{ Number2 }}"
       when: Number1 > Number2        
     
