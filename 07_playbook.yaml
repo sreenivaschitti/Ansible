@@ -1,0 +1,22 @@
+- name: Variables_types
+  hosts: local
+  connection: local
+  vars:
+    program: "Devsecops"
+    duration: 140
+    IS_LIVE: true
+    Details: #map 
+      Months: 4
+      trainer: "siva"
+    Topics: #list
+      - Linux
+      - Shell
+      - Ansible
+     tasks:
+      - name: Print variables
+      ansible.builtin.debug:
+        msg: |
+          program: {{"program"}}
+          duration: {{"duration"}}
+        when: IS_LIVE 
+    
