@@ -1,5 +1,6 @@
 - name: shell
   hosts: local
+  become: yes
   connection: local
   tasks:
     - name: command 
