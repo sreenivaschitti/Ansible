@@ -32,8 +32,13 @@
       prompt: please enter Number
       private: false
   tasks:
-    - name: print less or more
+    - name: Number1 is less than Number2
       ansible.builtin.debug:
-        msg: "{{ Number1 }} is {{ Number2 }}"
-      #when: Number1 < Number2        
+        msg: "{{ Number1 }} is LESS than {{ Number2 }}"
+      when: Number1 < (Number2 | int)
+
+    - name: Number1 is greater than or equal to Number2
+      ansible.builtin.debug:
+        msg: "{{ Number1 }} is GREATER than or EQUAL to {{ Number2 }}"
+      when: Number1 >= (Number2 | int)     
     
