@@ -33,7 +33,7 @@
       private: false
   tasks:
     - name: print less or more
-    ansible.builtin.debug:
-      -msg: {{ Number1 }} is less {{ Number2 }}  
-    when: Number1 > Number2        
+      ansible.builtin.debug:
+        msg: {{ Number1 }} less {{ Number2 }}  
+      when: Number1 > Number2        
     
