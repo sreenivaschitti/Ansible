@@ -29,7 +29,7 @@
     Number1: 40
   vars_prompt:
     - name: Number2
-      program: please enter Number
+      prompt: please enter Number
       private: false
   tasks:
     - name: print less or more
