@@ -4,7 +4,7 @@
   vars:
     program: "Devsecops"
     duration: 140
-    IS_LIVE: false
+    IS_LIVE: true
     Details: #map 
       Months: 4
       trainer: "siva"
@@ -18,5 +18,7 @@
         msg: |
           Program : {{ program }}
           Duration: {{ duration }}
+          Details:  {{ Details }}
+          Topics:   {{ Topics }}
       when: IS_LIVE 
     
