@@ -6,7 +6,7 @@
     - name: insall packages
       ansible.builtin.package:
         name: "{{ item }}"
-        state: present
+        state: absent
       loop:
         - mysql 
         - nginx
