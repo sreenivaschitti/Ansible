@@ -1,0 +1,11 @@
+- name: install packages
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+    - name: insall packages
+      ansible.builtin.packages:
+        name: "{{ item }}"
+        state: present
+      loop:
+        -mysql 
